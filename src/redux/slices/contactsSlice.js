@@ -1,11 +1,11 @@
-import { createSlice, createAction } from '@reduxjs/toolkit';
-import { nanoid } from 'nanoid';
+import { createSlice, createAction } from "@reduxjs/toolkit";
+import { nanoid } from "nanoid";
 
-export const addContact = createAction('contacts/add');
-export const deleteContact = createAction('contacts/delete');
+export const addContact = createAction("contacts/add");
+export const deleteContact = createAction("contacts/delete");
 
 const contactsSlice = createSlice({
-  name: 'contacts',
+  name: "contacts",
   initialState: [],
   reducers: {},
   extraReducers: (builder) => {

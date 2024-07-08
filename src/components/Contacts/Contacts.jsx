@@ -1,11 +1,11 @@
-import React from 'react';
-import ContactForm from '../ContactForm/ContactForm';
-import ContactList from '../ContactList/ContactList';
-import Filter from '../Filter/Filter';
-import styles from './Contacts.module.scss';
-import { useDispatch, useSelector } from 'react-redux';
-import { addContact, deleteContact } from '../../redux/slices/contactsSlice';
-import { setFilter } from '../../redux/slices/filterSlice';
+import React from "react";
+import ContactForm from "../ContactForm/ContactForm";
+import ContactList from "../ContactList/ContactList";
+import Filter from "../Filter/Filter";
+import styles from "./Contacts.module.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { addContact, deleteContact } from "../../redux/slices/contactsSlice";
+import { setFilter } from "../../redux/slices/filterSlice";
 
 function Contacts() {
   const dispatch = useDispatch();
@@ -25,7 +25,7 @@ function Contacts() {
   };
 
   const filteredContacts = contacts.filter((contact) =>
-    contact.name.toLowerCase().includes(filter.toLowerCase())
+    contact.name.toLowerCase().includes(filter.toLowerCase()),
   );
 
   return (

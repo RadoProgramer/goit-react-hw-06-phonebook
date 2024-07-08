@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './ContactItem.module.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import styles from "./ContactItem.module.scss";
 
 const ContactItem = ({ contact, onDelete }) => {
   return (
